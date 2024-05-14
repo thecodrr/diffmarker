@@ -5,9 +5,10 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
 	build: {
 		lib: {
+			name: 'diffblazer',
 			entry: resolve(__dirname, 'src/index.ts'),
 			fileName: 'index',
-			formats: ['es', 'cjs'],
+			formats: ['es', 'cjs', 'umd'],
 		},
 		minify: false,
 	},
